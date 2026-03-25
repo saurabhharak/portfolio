@@ -1,148 +1,293 @@
-
-# Saurabh Harak Portfolio
-
-
-Hello, I'm Saurabh Harak, an independent and self-motivated professional with a passion for software development, data engineering, and data science. Over the years, I have gained valuable experience in these fields, blending technical expertise with a proven track record of successful project implementations.
-
-## About Me
-
-
-Dual-skilled Machine Learning Engineer and Data Engineer with 4 years of experience in designing and implementing robust data pipelines, driving efficient data management and analysis.
-
-Specialized in developing machine learning models and algorithms to extract actionable insights from complex datasets. Adept at leveraging advanced technologies to optimize data-driven processes and enhance decision-making.
-
-Proven track record in successful delivery of an ERP project, pioneering R&D for autonomous drones, and hands-on development and leadership responsibilities. 
-
-Proficient in Full Stack and Android Development, contributing to tailored solutions, enhancing operational efficiency, and enriching user experiences. 
-
-
-Seeking to contribute expertise in both Data and Machine Learning domains to impactful projects and innovative solutions.
-
-<!-- **LinkedIn:** [LinkedIn Profile](<https://www.linkedin.com/in/saurabh-harak/>)
-
-## Core Competencies
-
-- **Data and Machine Learning Engineering**
-- **Generative AI**
-- **Python Programming**
-- **Automation**
-- **Software Development**
-- **Full Stack Development**
-- **Database Management**
-- **Big Data Technologies**
-- **Data Visualization**
-- **Project Management**
-- **People Management**
-
+---
+layout: default
 ---
 
-## Skills
+<section class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-name">Saurabh Harak</h1>
+    <p class="hero-title">Senior Software Engineer – AI Platforms</p>
+    <p class="hero-tagline">Building Enterprise RAG, LLM Evaluation & Agentic AI Systems at Scale</p>
+    <div class="hero-social">
+      <a href="https://linkedin.com/in/saurabh-harak" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://github.com/saurabhharak" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+      <a href="mailto:jobsforsaurabhharak@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
 
-**IT Skills:**
-- **Big Data Ecosystem:** NoSQL, Spark, PySpark, Kafka
-- **Languages:** Python, core Java, C++, SQL
-- **Cloud Computing:** Azure
-- **Machine/Deep Learning:** Generative AI, GPT model customization, ANN, CNN, DNN, Linear Regression, Yolo3, Logistic regression, Decision tree, SVM algorithm, Naive Bayes algorithm, KNN algorithm, K-means, Random Forest algorithm
-- **Database:** MySQL, MongoDB
-- **Statistics/ML:** Linear/Logistic Regression, Ensemble Trees, Gradient Boosted trees
-- **Frameworks:** Django, Flask, CSS Bootstrap, Flutter, Streamlit
-- **Version Control:** Git, GitHub
-- **Deployment Tools:** Heroku, Azure, AWS
+<!-- Impact Metrics -->
+<div class="metric-grid">
+  <div class="metric">
+    <span class="metric__value">5+</span>
+    <span class="metric__label">Years Experience</span>
+  </div>
+  <div class="metric">
+    <span class="metric__value">80%+</span>
+    <span class="metric__label">Test Coverage</span>
+  </div>
+  <div class="metric">
+    <span class="metric__value">3s</span>
+    <span class="metric__label">p95 Eval Latency</span>
+  </div>
+  <div class="metric">
+    <span class="metric__value">$0.015</span>
+    <span class="metric__label">Cost / Evaluation</span>
+  </div>
+</div>
 
----
+<!-- About -->
+<div class="section">
+  <h2 class="section__title">About</h2>
+  <p class="section__subtitle">Senior GenAI Engineer building production AI systems</p>
+  <p>Currently a core engineer at <strong>TechnoMile</strong>, where I build <strong>Mila Chat</strong> — a multi-tenant enterprise RAG platform serving federal clients — and sole-architected the <strong>Unified AI Evaluation Platform</strong> that consolidated 3 codebases into one YAML-configurable system, cutting onboarding from 3 weeks to under 4 hours.</p>
+  <p>Previously fine-tuned Llama2/3 with LoRA/PEFT at Computech Corporation, built spatio-temporal data pipelines at ISB Hyderabad, and led drone autonomy R&D at Jatayu. MSc in Machine Learning & AI from Liverpool John Moores University.</p>
+</div>
 
-## Career History
+<!-- Featured Projects -->
+<div class="section">
+  <h2 class="section__title">Featured Projects</h2>
+  <p class="section__subtitle">Enterprise-scale AI systems in production</p>
 
-### CES LTD – HYDERABAD | Sept. 2023 – Present
-**ML Engineer**
+  <div class="project-grid">
+    <div class="project-card project-card--featured">
+      <div class="project-card__header">
+        <span class="featured-badge">Enterprise</span>
+        <h3>Mila Chat</h3>
+        <p class="project-card__subtitle">Multi-Tenant Enterprise RAG Platform</p>
+      </div>
+      <p class="project-card__desc">Core engineer on a production multi-tenant GenAI platform supporting federal enterprise clients across document intelligence and conversational AI. Designed retrieval and ingestion architecture with strict multi-tenant isolation at every layer — database, vector search, and conversation context.</p>
+      <div class="project-card__metrics">
+        <div class="metric">
+          <span class="metric__value">3s</span>
+          <span class="metric__label">p95 Latency</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">$0.015</span>
+          <span class="metric__label">Per Question</span>
+        </div>
+      </div>
+      <div class="project-card__tech">
+        <span class="tech-badge">Azure OpenAI</span>
+        <span class="tech-badge">Qdrant</span>
+        <span class="tech-badge">PostgreSQL</span>
+        <span class="tech-badge">AWS SQS</span>
+        <span class="tech-badge">Step Functions</span>
+        <span class="tech-badge">Kubernetes</span>
+      </div>
+    </div>
 
-Responsibilities include strategic project planning, data cleaning, advanced model development, NLP application, rigorous testing, user-friendly documentation, continuous monitoring, and performance optimization. Proficient with Llama 2, LangChain, Rag, a vector database, and Azure Machine Learning Studio.
+    <div class="project-card project-card--featured">
+      <div class="project-card__header">
+        <span class="featured-badge">Sole Architect</span>
+        <h3>Unified AI Evaluation Platform</h3>
+        <p class="project-card__subtitle">LLM-as-Judge Evaluation System</p>
+      </div>
+      <p class="project-card__desc">Consolidated 3 independent evaluation codebases (~3,000+ lines of duplicated code) into a single YAML-configurable system evaluating 3 enterprise AI products. Pluggable LLM-as-Judge engine with GPT-4.1, 5 LLM metrics + 3 deterministic metrics, fully integrated into Azure Pipelines CI/CD.</p>
+      <div class="project-card__metrics">
+        <div class="metric">
+          <span class="metric__value">4hrs</span>
+          <span class="metric__label">Onboarding (was 3 wks)</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">80%+</span>
+          <span class="metric__label">Test Coverage</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">70%</span>
+          <span class="metric__label">Effort Reduction</span>
+        </div>
+      </div>
+      <div class="project-card__tech">
+        <span class="tech-badge">GPT-4.1</span>
+        <span class="tech-badge">Jinja2</span>
+        <span class="tech-badge">Streamlit</span>
+        <span class="tech-badge">Plotly</span>
+        <span class="tech-badge">PostgreSQL</span>
+        <span class="tech-badge">Azure Pipelines</span>
+      </div>
+    </div>
 
-*Key Deliverables:*
-- Project Plan
-- Chatbot Architecture
-- Data Collection and Preprocessing
-- Machine Learning Models
-- Model Evaluation Report
-- NLP Implementations
-- Chatbot Behavior and Responses
+    <div class="project-card project-card--featured">
+      <div class="project-card__header">
+        <span class="featured-badge">Open Source</span>
+        <h3>Creator GraphRAG</h3>
+        <p class="project-card__subtitle">Multilingual Book-to-Video Knowledge System</p>
+      </div>
+      <p class="project-card__desc">Production-grade system that ingests multilingual books (Marathi, Hindi, English) via Sarvam AI OCR, builds a Knowledge Graph + Vector Store, and generates citation-enforced video content packages. Hybrid retrieval combining Neo4j graph traversal with Qdrant vector similarity search.</p>
+      <div class="project-card__metrics">
+        <div class="metric">
+          <span class="metric__value">71/71</span>
+          <span class="metric__label">Tests Passing</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">5,654</span>
+          <span class="metric__label">Concept Nodes</span>
+        </div>
+        <div class="metric">
+          <span class="metric__value">973</span>
+          <span class="metric__label">Indexed Chunks</span>
+        </div>
+      </div>
+      <div class="project-card__tech">
+        <span class="tech-badge">FastAPI</span>
+        <span class="tech-badge">Neo4j</span>
+        <span class="tech-badge">Qdrant</span>
+        <span class="tech-badge">React 19</span>
+        <span class="tech-badge">Celery</span>
+        <span class="tech-badge">PostgreSQL</span>
+      </div>
+      <div class="project-card__links">
+        <a href="https://github.com/saurabhharak/creator-graphrag" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> View on GitHub</a>
+      </div>
+    </div>
+  </div>
+</div>
 
----
+<!-- Skills -->
+<div class="section">
+  <h2 class="section__title">Technical Skills</h2>
+  <p class="section__subtitle">End-to-end AI systems expertise</p>
 
-### INDIAN SCHOOL OF BUSINESS – HYDERABAD | Nov. 2022 – Sept 2023
-**Data Engineer**
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3><i class="fas fa-brain" aria-hidden="true"></i> AI / ML</h3>
+      <div class="skill-badges">
+        <span class="tech-badge">RAG Systems</span>
+        <span class="tech-badge">Agentic AI</span>
+        <span class="tech-badge">LLM Evaluation</span>
+        <span class="tech-badge">LLM-as-Judge</span>
+        <span class="tech-badge">LoRA/PEFT</span>
+        <span class="tech-badge">Semantic Search</span>
+        <span class="tech-badge">Prompt Engineering</span>
+        <span class="tech-badge">LangChain</span>
+        <span class="tech-badge">HuggingFace</span>
+        <span class="tech-badge">OpenAI</span>
+        <span class="tech-badge">Azure OpenAI</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3><i class="fas fa-server" aria-hidden="true"></i> Backend</h3>
+      <div class="skill-badges">
+        <span class="tech-badge">Python 3.11</span>
+        <span class="tech-badge">FastAPI</span>
+        <span class="tech-badge">Click CLI</span>
+        <span class="tech-badge">Microservices</span>
+        <span class="tech-badge">REST APIs</span>
+        <span class="tech-badge">Async Pipelines</span>
+        <span class="tech-badge">System Design</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3><i class="fas fa-database" aria-hidden="true"></i> Data & Cloud</h3>
+      <div class="skill-badges">
+        <span class="tech-badge">PostgreSQL</span>
+        <span class="tech-badge">Qdrant</span>
+        <span class="tech-badge">Neo4j</span>
+        <span class="tech-badge">MongoDB</span>
+        <span class="tech-badge">AWS S3/SQS/Lambda</span>
+        <span class="tech-badge">Step Functions</span>
+        <span class="tech-badge">Azure</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <h3><i class="fas fa-cogs" aria-hidden="true"></i> DevOps & QA</h3>
+      <div class="skill-badges">
+        <span class="tech-badge">Docker</span>
+        <span class="tech-badge">Jenkins</span>
+        <span class="tech-badge">Azure Pipelines</span>
+        <span class="tech-badge">CI/CD</span>
+        <span class="tech-badge">Pytest 80%+</span>
+        <span class="tech-badge">Streamlit</span>
+        <span class="tech-badge">Plotly</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-Played a pivotal role in designing, constructing, and managing data pipelines and databases for a national-scale spatio-temporal data warehousing, visualization, and analytics initiative.
+<!-- Career Timeline -->
+<div class="section">
+  <h2 class="section__title">Experience</h2>
+  <p class="section__subtitle">From drones to enterprise AI platforms</p>
 
-*Key Deliverables:*
-- Develop database architecture
-- Integrate data from diverse sources
-- Construct robust data pipelines
-- Successful creation of data pipelines for over 20 datasets
-- Orchestrated web scraping efforts across more than 10 websites
-- Spearheaded the development of a specialized application for LGD MAPPING
-- Innovatively designed and executed an architecture for dataset naming and organization
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="timeline-item__date">Mar 2025 – Present</span>
+      <h3 class="timeline-item__title">Senior Software Engineer – AI Platforms</h3>
+      <span class="timeline-item__company">TechnoMile</span>
+      <p class="timeline-item__desc">Core engineer on Mila Chat (multi-tenant RAG for federal clients). Sole architect of the Unified AI Evaluation Platform — consolidated 3 codebases, cut onboarding from 3 weeks to 4 hours, 80%+ test coverage.</p>
+      <div class="project-card__tech">
+        <span class="tech-badge">Azure OpenAI</span>
+        <span class="tech-badge">Qdrant</span>
+        <span class="tech-badge">PostgreSQL</span>
+        <span class="tech-badge">Kubernetes</span>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-item__date">Sept 2023 – Mar 2025</span>
+      <h3 class="timeline-item__title">Machine Learning Engineer – Conversational AI</h3>
+      <span class="timeline-item__company">Computech Corporation</span>
+      <p class="timeline-item__desc">Fine-tuned Llama2/3 with LoRA/PEFT, built agentic chatbots with LangChain ReAct patterns, and developed intelligent document query systems for enterprise clients.</p>
+      <div class="project-card__tech">
+        <span class="tech-badge">LangChain</span>
+        <span class="tech-badge">LoRA/PEFT</span>
+        <span class="tech-badge">Azure OpenAI</span>
+        <span class="tech-badge">FastAPI</span>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-item__date">Nov 2022 – Sept 2023</span>
+      <h3 class="timeline-item__title">Data Scientist</h3>
+      <span class="timeline-item__company">Indian School of Business, Hyderabad</span>
+      <p class="timeline-item__desc">Built large-scale spatio-temporal data pipelines for a national-scale data warehousing initiative. Automated ingestion from 10+ government sources, 30% efficiency improvement.</p>
+      <div class="project-card__tech">
+        <span class="tech-badge">PySpark</span>
+        <span class="tech-badge">Pandas</span>
+        <span class="tech-badge">Selenium</span>
+        <span class="tech-badge">Wasabi</span>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-item__date">Jan 2021 – Nov 2022</span>
+      <h3 class="timeline-item__title">Full Stack Developer / Team Leader</h3>
+      <span class="timeline-item__company">Jatayu Unmanned Technology Pvt. Ltd.</span>
+      <p class="timeline-item__desc">Led R&D for drone autonomy systems. Drove automation across drone operations achieving 40% effort reduction. Built web applications for drone data monitoring.</p>
+      <div class="project-card__tech">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Django</span>
+        <span class="tech-badge">OpenCV</span>
+        <span class="tech-badge">YOLOv3</span>
+      </div>
+    </div>
+  </div>
+</div>
 
----
+<!-- Education -->
+<div class="section">
+  <h2 class="section__title">Education</h2>
 
-### JATAYU UNMANNED TECHNOLOGY PVT. LTD. – MUMBAI | Jan. 2021 – Nov. 2022
-**Full Stack Developer/Team Leader**
+  <div class="education-grid">
+    <div class="education-card">
+      <h4>MSc Machine Learning & AI</h4>
+      <p>Liverpool John Moores University</p>
+    </div>
+    <div class="education-card">
+      <h4>PG Diploma ML & AI</h4>
+      <p>IIIT Bangalore</p>
+    </div>
+    <div class="education-card">
+      <h4>BE Computer Engineering</h4>
+      <p>Pune University</p>
+    </div>
+  </div>
+</div>
 
-Led innovative research and development projects focused on achieving drone autonomy. Oversaw and led a team of skilled professionals, driving automation implementation across various dimensions of drone operations. Acquired a Certification of Appreciation in recognition of exceptional contributions (2021).
-
-*Key Deliverables:*
-- Led innovative research and development projects
-- Oversaw and led a team of skilled professionals
-- Drove automation implementation across various dimensions
-- Conceptualized and realized a sophisticated web application for drone data monitoring
-- Demonstrated exceptional analytical skills
-
----
-
-### FREELANCER (Full Stack Developer & Android Developer) | Mar. 2020 – Jan. 2021
-*Key Deliverables:*
-- Orchestrated the holistic development of a specialized ERP application
-- Championed the inception of a comprehensive mobile application for a beauty parlour
-- Achieved the delivery of the ERP project within a remarkable 5-month timeline
-- Attained the culmination of mobile application development within a laudable span of 4 months, currently hosted on the Play Store
-
-## Education
-
-- Executive Post Graduation Programme - Machine Learning & AI from IIIT Bangalore | 70%
-- BE. - Computer Engineering from Pune University | 69%
-- Diploma - Computer Engineering from SIT Polytechnic Nashik | 82%
-
-- **Certificates:**
-  - Introduction to Generative AI
-  - Introduction to Large Language Models
-  - Executive PG Program in Machine Learning and Artificial Intelligence September 2021 for successfully clearing Course 3
-  - Spark Basics, Great Learning
-  - Introduction to Tensorflow and Keras, Great Learning -->
-
-## Passion for Technology
-
-I have a profound belief in the power of technology to solve complex problems and make a positive impact. As a Data Engineer, I find joy in tackling challenging projects, employing data pre-processing techniques, and taking ownership of end-to-end Data Engineer projects. Translating product requirements into analytical specifications and leveraging technology to automate operational activities are some of my key strengths.
-
-## Constant Growth
-
-I am excited about the endless possibilities in the field of technology, and I remain eager to continue learning and growing as a ML Engineer/Data Engineer My commitment to making a positive impact through my technical abilities drives me forward every day.
-
-## My Projects
-
-Please explore my portfolio to learn more about the projects I've worked on and the skills I've honed along the way. You'll find a diverse range of projects, including Data Engineering, Data Science, Full Stack Devloper, and much more.
-
-Thank you for visiting, and I hope you enjoy your time here!
-
----
-Feel free to reach out to me at [jobsforsaurabhharak@gmail.com](mailto:jobsforsaurabhharak@gmail.com) or [+91-7719012555](tel:+917719012555) for any collaboration or opportunities.
-
-
-
-
-
-
-
-
-
-
-
+<!-- Contact CTA -->
+<div class="contact-cta">
+  <h2>Let's Build Something Together</h2>
+  <p>Open to collaboration, consulting, and new opportunities in AI/ML engineering.</p>
+  <div class="contact-buttons">
+    <a href="mailto:jobsforsaurabhharak@gmail.com" class="contact-btn--primary"><i class="fas fa-envelope" aria-hidden="true"></i> Get in Touch</a>
+    <a href="https://linkedin.com/in/saurabh-harak" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+    <a href="https://github.com/saurabhharak" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+  </div>
+</div>
