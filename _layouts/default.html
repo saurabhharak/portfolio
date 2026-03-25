@@ -31,11 +31,12 @@
       <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
         <span></span>
       </label>
+      {% capture current_url %}{{ page.url | remove: '/index.html' }}{% endcapture %}
       <ul class="nav-links">
-        <li><a href="{{ '/portfolio/' | relative_url }}">Home</a></li>
-        <li><a href="{{ '/portfolio/ai-genai' | relative_url }}">AI & GenAI</a></li>
-        <li><a href="{{ '/portfolio/data-science' | relative_url }}">Data Science</a></li>
-        <li><a href="{{ '/portfolio/projects' | relative_url }}">Projects</a></li>
+        <li><a href="{{ '/portfolio/' | relative_url }}" {% if current_url == '/portfolio/' or current_url == '/portfolio' %}class="nav-active"{% endif %}>Home</a></li>
+        <li><a href="{{ '/portfolio/ai-genai' | relative_url }}" {% if current_url contains 'ai-genai' %}class="nav-active"{% endif %}>AI & GenAI</a></li>
+        <li><a href="{{ '/portfolio/data-science' | relative_url }}" {% if current_url contains 'data-science' %}class="nav-active"{% endif %}>Data Science</a></li>
+        <li><a href="{{ '/portfolio/projects' | relative_url }}" {% if current_url contains 'projects' %}class="nav-active"{% endif %}>Projects</a></li>
         <li class="nav-social"><a href="{{ site.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
         <li class="nav-social"><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
       </ul>

@@ -1,6 +1,20 @@
 ---
 ---
 
+// Override Cayman variables BEFORE import (they use !default)
+$header-heading-color: #fff;
+$header-bg-color: #0a0f1c;
+$header-bg-color-secondary: #1e3a5f;
+$section-headings-color: #f1f5f9;
+$body-text-color: #94a3b8;
+$body-link-color: #3b82f6;
+$blockquote-text-color: #64748b;
+$code-bg-color: #1a2332;
+$code-text-color: #60a5fa;
+$border-color: #1e293b;
+$table-border-color: #1e293b;
+$hr-border-color: #1e293b;
+
 @import 'jekyll-theme-cayman';
 
 // ============================================
@@ -24,6 +38,10 @@
 }
 
 // --- Global Overrides ---
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -39,7 +57,32 @@ body {
 
 // Hide Cayman's default header
 .page-header {
-  display: none !important;
+  display: none;
+}
+
+// --- Focus States (Accessibility) ---
+*:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+#skip-to-content:focus {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  height: auto;
+  width: auto;
+  background: var(--accent-primary);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  z-index: 9999;
+  outline: 2px solid var(--accent-glow);
 }
 
 // Override main content
@@ -54,9 +97,10 @@ body {
   h1, h2, h3, h4, h5, h6 {
     color: var(--text-primary);
     font-family: 'Inter', sans-serif;
+    font-weight: 700;
   }
 
-  h1 { font-size: 2rem; font-weight: 700; margin-top: 2.5rem; }
+  h1 { font-size: 2rem; margin-top: 2.5rem; }
   h2 { font-size: 1.5rem; font-weight: 600; margin-top: 2rem; color: var(--accent-glow); }
   h3 { font-size: 1.2rem; font-weight: 600; margin-top: 1.5rem; }
 
@@ -69,13 +113,15 @@ body {
     color: var(--accent-primary);
     text-decoration: none;
     transition: color 0.2s;
-    &:hover { color: var(--accent-glow); }
+    &:hover { color: var(--accent-glow); text-decoration: none; }
   }
 
   hr {
     border: none;
     border-top: 1px solid var(--border-color);
     margin: 2.5rem 0;
+    height: 0;
+    background: none;
   }
 
   ul, ol {
@@ -91,10 +137,71 @@ body {
     font-size: 0.875em;
   }
 
+  pre {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+  }
+
+  kbd {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-accent);
+    border-bottom-color: var(--text-muted);
+    box-shadow: inset 0 -1px 0 var(--text-muted);
+    color: var(--text-primary);
+  }
+
+  blockquote {
+    border-left-color: var(--accent-primary);
+    color: var(--text-muted);
+  }
+
+  table {
+    th, td {
+      border-color: var(--border-color);
+    }
+    th {
+      background: var(--bg-card);
+      color: var(--text-primary);
+    }
+  }
+
   strong {
     color: var(--text-primary);
   }
 }
+
+// --- Dark Syntax Highlighting (Rouge) ---
+.highlight { background-color: var(--bg-card); }
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs { color: #6a737d; }
+.highlight .cp { color: #e2c08d; }
+.highlight .err { color: #f97583; background-color: transparent; }
+.highlight .gd { color: #f97583; background-color: rgba(249, 117, 131, 0.1); }
+.highlight .gi { color: #85e89d; background-color: rgba(133, 232, 157, 0.1); }
+.highlight .k, .highlight .kc, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv { color: #f97583; font-weight: normal; }
+.highlight .kt { color: #79b8ff; font-weight: normal; }
+.highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .m, .highlight .mb, .highlight .mx, .highlight .il { color: #79b8ff; }
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .s1 { color: #9ecbff; }
+.highlight .sr { color: #dbedff; }
+.highlight .ss { color: #b392f0; }
+.highlight .na { color: #79b8ff; }
+.highlight .nb, .highlight .bp { color: #79b8ff; }
+.highlight .nc { color: #b392f0; font-weight: normal; }
+.highlight .no { color: #79b8ff; }
+.highlight .nd { color: #b392f0; font-weight: normal; }
+.highlight .ni { color: #b392f0; }
+.highlight .ne, .highlight .nf, .highlight .nl { color: #b392f0; font-weight: normal; }
+.highlight .nn { color: #b392f0; }
+.highlight .nt { color: #85e89d; }
+.highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi { color: #79b8ff; }
+.highlight .o, .highlight .ow { color: #f97583; font-weight: normal; }
+.highlight .ge { font-style: italic; }
+.highlight .gs { font-weight: bold; }
+.highlight .w { color: #6a737d; }
+.highlight .gh, .highlight .gu { color: #6a737d; }
+.highlight .gp { color: #6a737d; }
+.highlight .go { color: #959da5; }
+.highlight .gr, .highlight .gt { color: #f97583; }
 
 // --- Navigation Bar ---
 .nav-bar {
@@ -148,6 +255,11 @@ body {
     &:hover {
       color: var(--text-primary);
       background: rgba(59, 130, 246, 0.1);
+    }
+
+    &.nav-active {
+      color: var(--accent-primary);
+      background: rgba(59, 130, 246, 0.12);
     }
   }
 
@@ -232,6 +344,26 @@ body {
     top: 0;
     transform: rotate(-45deg);
   }
+}
+
+// --- Page Fade-In Animation ---
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-content {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.section, .project-grid, .metric-grid {
+  animation: fadeInUp 0.4s ease-out both;
 }
 
 // --- Hero Section ---
