@@ -26,28 +26,25 @@
   <!-- Navigation -->
   <nav class="nav-bar">
     <div class="nav-container">
-      <a class="nav-brand" href="{{ '/portfolio/' | relative_url }}">SH</a>
+      <a class="nav-brand" href="{{ '/' | relative_url }}">SH</a>
       <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
       <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
         <span></span>
       </label>
       {% capture current_url %}{{ page.url | remove: '/index.html' }}{% endcapture %}
       <ul class="nav-links">
-        <li><a href="{{ '/portfolio/' | relative_url }}" {% if current_url == '/portfolio/' or current_url == '/portfolio' %}class="nav-active"{% endif %}>Home</a></li>
-        <li><a href="{{ '/portfolio/ai-genai' | relative_url }}" {% if current_url contains 'ai-genai' %}class="nav-active"{% endif %}>AI & GenAI</a></li>
-        <li><a href="{{ '/portfolio/data-science' | relative_url }}" {% if current_url contains 'data-science' %}class="nav-active"{% endif %}>Data Science</a></li>
-        <li><a href="{{ '/portfolio/projects' | relative_url }}" {% if current_url contains 'projects' %}class="nav-active"{% endif %}>Projects</a></li>
+        <li><a href="{{ '/' | relative_url }}" {% if current_url == '/' or current_url == '' %}class="nav-active"{% endif %}>Home</a></li>
+        <li><a href="{{ '/ai-genai' | relative_url }}" {% if current_url contains 'ai-genai' %}class="nav-active"{% endif %}>AI & GenAI</a></li>
+        <li><a href="{{ '/data-science' | relative_url }}" {% if current_url contains 'data-science' %}class="nav-active"{% endif %}>Data Science</a></li>
+        <li><a href="{{ '/projects' | relative_url }}" {% if current_url contains 'projects' %}class="nav-active"{% endif %}>Projects</a></li>
         <li class="nav-social"><a href="{{ site.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
         <li class="nav-social"><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
       </ul>
     </div>
   </nav>
 
-  {% capture home_url %}/portfolio/{% endcapture %}
-  {% capture home_url2 %}/portfolio/index.html{% endcapture %}
-
   <!-- Sub-page header (homepage has its own hero in content) -->
-  {% unless page.url == home_url or page.url == home_url2 %}
+  {% unless page.url == '/' or page.url == '/index.html' %}
   <header class="page-hero--sub">
     <h1>{{ page.title }}</h1>
     <p>{{ page.description }}</p>
