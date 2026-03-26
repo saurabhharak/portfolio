@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0a0f1c">
+  <meta name="theme-color" content="#0e1320">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   {% seo %}
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Space Grotesk (display/headlines) + Inter (body) + JetBrains Mono (code) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -26,7 +26,9 @@
   <!-- Navigation -->
   <nav class="nav-bar">
     <div class="nav-container">
-      <a class="nav-brand" href="{{ '/' | relative_url }}">SH</a>
+      <a class="nav-brand" href="{{ '/' | relative_url }}">
+        <span class="nav-brand__logo">SH</span>
+      </a>
       <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
       <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
         <span></span>
@@ -37,6 +39,7 @@
         <li><a href="{{ '/ai-genai' | relative_url }}" {% if current_url contains 'ai-genai' %}class="nav-active"{% endif %}>AI & GenAI</a></li>
         <li><a href="{{ '/data-science' | relative_url }}" {% if current_url contains 'data-science' %}class="nav-active"{% endif %}>Data Science</a></li>
         <li><a href="{{ '/projects' | relative_url }}" {% if current_url contains 'projects' %}class="nav-active"{% endif %}>Projects</a></li>
+        <li class="nav-divider" aria-hidden="true"></li>
         <li class="nav-social"><a href="{{ site.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
         <li class="nav-social"><a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></li>
       </ul>
@@ -46,8 +49,11 @@
   <!-- Sub-page header (homepage has its own hero in content) -->
   {% unless page.url == '/' or page.url == '/index.html' %}
   <header class="page-hero--sub">
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.description }}</p>
+    <div class="page-hero__inner">
+      <span class="page-hero__label">{{ page.title | upcase }}</span>
+      <h1>{{ page.title }}</h1>
+      <p>{{ page.description }}</p>
+    </div>
   </header>
   {% endunless %}
 
@@ -58,10 +64,16 @@
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="footer-social">
-      <a href="{{ site.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-      <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
-      <a href="mailto:{{ site.email }}" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">SH</span>
+        <p class="footer-tagline">Building AI systems at scale.</p>
+      </div>
+      <div class="footer-social">
+        <a href="{{ site.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="mailto:{{ site.email }}" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+      </div>
     </div>
     <p class="footer-text">&copy; {{ 'now' | date: '%Y' }} {{ site.author }}. Built with Jekyll & GitHub Pages.</p>
   </footer>

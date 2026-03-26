@@ -4,8 +4,9 @@ layout: default
 
 <section class="hero-section">
   <div class="hero-content">
+    <p class="hero-tagline" style="margin-bottom: 0.75rem; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--secondary);">Senior Software Engineer</p>
     <h1 class="hero-name">Saurabh Harak</h1>
-    <p class="hero-title">Senior Software Engineer – AI Platforms</p>
+    <p class="hero-title">AI Platforms Engineering</p>
     <p class="hero-tagline">Building Enterprise RAG, LLM Evaluation & Agentic AI Systems at Scale</p>
     <div class="hero-social">
       <a href="https://linkedin.com/in/saurabh-harak" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
