@@ -1,8 +1,10 @@
 ---
 layout: default
 title: AI & GenAI Projects
-description: Enterprise RAG platforms, LLM evaluation systems, and agentic AI
+description: Production-grade RAG platforms, AI evaluation systems, and agentic workflows for enterprise environments.
 ---
+
+<p class="section__subtitle" style="margin-top: 0; margin-bottom: var(--space-8);">This section highlights my work across multi-tenant retrieval systems, evaluation infrastructure, and enterprise AI orchestration — with a focus on reliability, scalability, and measurable engineering impact.</p>
 
 <div class="project-grid">
 
@@ -12,8 +14,10 @@ description: Enterprise RAG platforms, LLM evaluation systems, and agentic AI
       <h3>Mila Chat — Multi-Tenant Enterprise RAG Platform</h3>
       <p class="project-card__subtitle">TechnoMile | Production System</p>
     </div>
-    <p class="project-card__desc">Core AI engineer on a multi-tenant GenAI platform supporting federal enterprise clients across document intelligence and conversational AI use cases, deployed on Kubernetes with horizontal pod scaling. Designed production-grade retrieval and ingestion architecture using Azure OpenAI, Azure Document Intelligence, PostgreSQL, Qdrant, and S3, with asynchronous orchestration through AWS SQS and Step Functions.</p>
-    <p class="project-card__desc">Implemented strict multi-tenant isolation at every layer — database queries filtered by client/org/user IDs with compound indexes, Qdrant metadata filters on all vector searches, and conversation context scoped per tenant. Architected the chat pipeline with parallel RAG + Text2SQL execution, singleton-cached clients for throughput, and per-interaction cost tracking.</p>
+    <p class="project-card__desc">Core AI engineer on a multi-tenant GenAI platform supporting federal enterprise use cases across document intelligence and conversational AI.</p>
+    <p class="project-card__desc">Designed the production retrieval and ingestion architecture using Azure OpenAI, Azure Document Intelligence, PostgreSQL, Qdrant, and S3, with asynchronous orchestration via AWS SQS and Step Functions.</p>
+    <p class="project-card__desc">Implemented strict tenant isolation across database queries, vector search filters, and conversation context to ensure client-safe retrieval.</p>
+    <p class="project-card__desc">Architected the chat execution flow with parallel RAG + Text2SQL processing, singleton-cached clients for throughput, and per-interaction cost tracking for operational visibility.</p>
     <div class="project-card__metrics">
       <div class="metric">
         <span class="metric__value">3s</span>
@@ -28,50 +32,50 @@ description: Enterprise RAG platforms, LLM evaluation systems, and agentic AI
       <span class="tech-badge">Azure OpenAI</span>
       <span class="tech-badge">Qdrant</span>
       <span class="tech-badge">PostgreSQL</span>
-      <span class="tech-badge">AWS SQS</span>
+      <span class="tech-badge">S3</span>
+      <span class="tech-badge">SQS</span>
       <span class="tech-badge">Step Functions</span>
-      <span class="tech-badge">Kubernetes</span>
-      <span class="tech-badge">Azure Doc Intelligence</span>
-      <span class="tech-badge">asyncio</span>
+      <span class="tech-badge">Multi-Tenant</span>
+      <span class="tech-badge">RAG</span>
     </div>
   </div>
 
   <div class="project-card project-card--featured">
     <div class="project-card__header">
       <span class="featured-badge">Sole Architect</span>
-      <h3>Unified AI Evaluation Platform</h3>
-      <p class="project-card__subtitle">TechnoMile | LLM-as-Judge Evaluation System</p>
+      <h3>Unified AI Evaluation Platform — CI/CD Integrated LLM Evaluation System</h3>
+      <p class="project-card__subtitle">TechnoMile | Sole Architect</p>
     </div>
-    <p class="project-card__desc">Sole architect and developer of a multi-paradigm AI evaluation platform that consolidated 3 independent evaluation codebases (~3,000+ lines of duplicated, untestable code) into a single YAML-configurable system evaluating 3 enterprise AI products (Mila Chat, Transform Copilot, NoticesIQ). Reduced new product onboarding from 2-3 weeks and 1,200+ lines of Python to under 4 hours and zero code.</p>
-    <p class="project-card__desc">Designed a pluggable LLM-as-Judge evaluation engine using Azure OpenAI (GPT-4.1) with versioned Jinja2 prompt templates, evaluating across 5 LLM-based metrics (Semantic Correctness, Completeness, Faithfulness, Relevancy, Clarity) and 3 deterministic metrics (F1/Precision/Recall). Fully integrated into Azure Pipelines CI/CD with regression gating. Built a 7-page Streamlit/Plotly evaluation dashboard with run explorer and cross-product metric comparison.</p>
+    <p class="project-card__desc">Designed and built a centralized evaluation platform that consolidated three separate evaluation systems into one YAML-configurable framework for multiple enterprise AI products.</p>
+    <p class="project-card__desc">Implemented LLM-as-Judge evaluation using Azure OpenAI across semantic correctness, completeness, faithfulness, relevancy, and clarity, alongside deterministic extraction metrics.</p>
+    <p class="project-card__desc">Integrated evaluation runs into CI/CD pipelines for automated regression checks, improving evaluation reliability and reducing new product onboarding from weeks to hours.</p>
+    <p class="project-card__desc">Built dashboard and storage workflows for evaluation tracking, comparison, and artifact management.</p>
     <div class="project-card__metrics">
       <div class="metric">
-        <span class="metric__value">4hrs</span>
-        <span class="metric__label">Onboarding (was 3 wks)</span>
+        <span class="metric__value">3</span>
+        <span class="metric__label">Products Unified</span>
       </div>
       <div class="metric">
         <span class="metric__value">80%+</span>
-        <span class="metric__label">Test Coverage (from 0%)</span>
+        <span class="metric__label">Test Coverage</span>
       </div>
       <div class="metric">
-        <span class="metric__value">70%</span>
-        <span class="metric__label">Effort Reduction</span>
+        <span class="metric__value">3s</span>
+        <span class="metric__label">p95 Latency</span>
       </div>
       <div class="metric">
-        <span class="metric__value">8</span>
-        <span class="metric__label">Eval Metrics</span>
+        <span class="metric__value">$0.015</span>
+        <span class="metric__label">Per Evaluation</span>
       </div>
     </div>
     <div class="project-card__tech">
-      <span class="tech-badge">GPT-4.1</span>
-      <span class="tech-badge">LLM-as-Judge</span>
-      <span class="tech-badge">Jinja2</span>
-      <span class="tech-badge">YAML</span>
+      <span class="tech-badge">Azure OpenAI</span>
+      <span class="tech-badge">FastAPI</span>
+      <span class="tech-badge">PostgreSQL</span>
       <span class="tech-badge">Streamlit</span>
-      <span class="tech-badge">Plotly</span>
-      <span class="tech-badge">PostgreSQL/JSONB</span>
-      <span class="tech-badge">Azure Pipelines</span>
-      <span class="tech-badge">Pytest</span>
+      <span class="tech-badge">CI/CD</span>
+      <span class="tech-badge">YAML</span>
+      <span class="tech-badge">Evaluation</span>
     </div>
   </div>
 
@@ -79,9 +83,10 @@ description: Enterprise RAG platforms, LLM evaluation systems, and agentic AI
     <div class="project-card__header">
       <span class="featured-badge">Open Source</span>
       <h3>Creator GraphRAG</h3>
-      <p class="project-card__subtitle">Multilingual Book-to-Video Knowledge System</p>
+      <p class="project-card__subtitle">Multilingual Knowledge + Vector Retrieval System</p>
     </div>
-    <p class="project-card__desc">Production-grade system that ingests multilingual books (Marathi, Hindi, English) via Sarvam AI OCR, builds a Knowledge Graph (Neo4j) + Vector Store (Qdrant), and generates citation-enforced video content packages. Hybrid retrieval combining Neo4j graph traversal with Qdrant vector similarity search using 4,096-dimensional embeddings via Qwen3-Embedding-8B.</p>
+    <p class="project-card__desc">Built a multilingual knowledge system that ingests books across Marathi, Hindi, and English via Sarvam AI OCR, extracts structured concepts into a Neo4j knowledge graph, and combines graph traversal with Qdrant vector similarity search using 4,096-dimensional embeddings for citation-aware content generation.</p>
+    <p class="project-card__desc">Designed as a production-style system with FastAPI, PostgreSQL, Qdrant, Neo4j, async processing via Celery, and comprehensive integration testing.</p>
     <div class="project-card__metrics">
       <div class="metric">
         <span class="metric__value">71/71</span>
@@ -117,7 +122,7 @@ description: Enterprise RAG platforms, LLM evaluation systems, and agentic AI
       <h3>LLM Fine-Tuning Pipeline</h3>
       <p class="project-card__subtitle">LoRA/PEFT for Llama2 & Llama3</p>
     </div>
-    <p class="project-card__desc">End-to-end LoRA fine-tuning pipeline for Llama2 (7B) and Llama3 using HuggingFace Transformers and PEFT. Improved domain-specific task accuracy by 20% with substantially reduced compute cost vs full fine-tuning. Includes configurable training datasets, domain evaluation scripts, and GGUF export for local inference.</p>
+    <p class="project-card__desc">Built an end-to-end LoRA fine-tuning pipeline for Llama2 (7B) and Llama3 using HuggingFace Transformers and PEFT. Delivered 20% domain-specific accuracy improvement with substantially reduced compute cost versus full fine-tuning. Includes configurable training datasets, domain evaluation scripts, and GGUF export for local inference.</p>
     <div class="project-card__metrics">
       <div class="metric">
         <span class="metric__value">20%</span>
@@ -139,7 +144,7 @@ description: Enterprise RAG platforms, LLM evaluation systems, and agentic AI
       <h3>Intelligent Document Query Bot</h3>
       <p class="project-card__subtitle">Microsoft Teams RAG Bot</p>
     </div>
-    <p class="project-card__desc">Intelligent bot for Microsoft Teams that uses advanced language models and document retrieval to provide context-aware answers from enterprise documents. Built with Bot Builder Library and Azure Bot Services, with FastAPI backend interfacing with OpenAI and LangChain for optimized retrieval. Integrated ChromaDB for efficient document vector storage.</p>
+    <p class="project-card__desc">Built a document retrieval bot for Microsoft Teams using OpenAI and LangChain for context-aware question answering over enterprise documents. Implemented FastAPI backend with ChromaDB vector storage and deployed via Azure Bot Services.</p>
     <div class="project-card__tech">
       <span class="tech-badge">OpenAI</span>
       <span class="tech-badge">LangChain</span>
@@ -155,7 +160,7 @@ description: Enterprise RAG platforms, LLM evaluation systems, and agentic AI
       <h3>Commercial LLM Fine-Tuning</h3>
       <p class="project-card__subtitle">OpenAI Davinci & GPT-3.5 Turbo</p>
     </div>
-    <p class="project-card__desc">Fine-tuned OpenAI models (Davinci-002, GPT-3.5 Turbo) for domain-specific conversational support using the OpenAI Fine-Tuning API. Built multi-turn conversation data preparation pipelines, evaluation harnesses using scikit-learn metrics, and deployed interactive Streamlit chat applications for real-time inference.</p>
+    <p class="project-card__desc">Fine-tuned OpenAI models (Davinci-002, GPT-3.5 Turbo) for domain-specific conversational support. Built multi-turn conversation data preparation pipelines, evaluation harnesses using scikit-learn metrics, and deployed interactive Streamlit chat applications for inference.</p>
     <div class="project-card__tech">
       <span class="tech-badge">GPT-3.5 Turbo</span>
       <span class="tech-badge">Davinci-002</span>
@@ -165,4 +170,126 @@ description: Enterprise RAG platforms, LLM evaluation systems, and agentic AI
     </div>
   </div>
 
+</div>
+
+<!-- Architecture Diagrams -->
+<div class="section">
+  <h2 class="section__title">Architecture Diagrams</h2>
+  <p class="section__subtitle">System-level design thinking behind the featured projects</p>
+
+  <div class="arch-grid">
+
+    <div class="arch-card">
+      <h3 class="arch-card__title">Mila Chat — Multi-Tenant RAG Architecture</h3>
+      <p class="arch-card__desc">Multi-tenant enterprise retrieval architecture with tenant-scoped query execution, vector search, relational metadata, and async ingestion workflows.</p>
+
+      <div class="arch-diagram">
+        <div>
+          <p class="arch-label">Query Path</p>
+          <div class="arch-row">
+            <span class="arch-node">User / Client</span>
+            <span class="arch-connector">&rarr;</span>
+            <span class="arch-node arch-node--primary">FastAPI Chat Service</span>
+            <span class="arch-connector">&rarr;</span>
+            <span class="arch-node arch-node--tertiary">Tenant Isolation Layer</span>
+          </div>
+          <div class="arch-row" style="margin-top: var(--space-3); padding-left: var(--space-8);">
+            <div class="arch-group">
+              <p class="arch-label" style="margin: 0;">Parallel Execution</p>
+              <div class="arch-row">
+                <span class="arch-node arch-node--primary">RAG Pipeline</span>
+                <span class="arch-connector">|</span>
+                <span class="arch-node arch-node--primary">Text2SQL Path</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="arch-label">Data Layer</p>
+          <div class="arch-row">
+            <span class="arch-node arch-node--secondary">Qdrant</span>
+            <span class="arch-node arch-node--secondary">PostgreSQL</span>
+            <span class="arch-node arch-node--secondary">S3</span>
+            <span class="arch-node">Azure OpenAI</span>
+          </div>
+        </div>
+
+        <div>
+          <p class="arch-label">Ingestion Path</p>
+          <div class="arch-row">
+            <span class="arch-node">Documents</span>
+            <span class="arch-connector">&rarr;</span>
+            <span class="arch-node">Azure Doc Intelligence</span>
+            <span class="arch-connector">&rarr;</span>
+            <span class="arch-node arch-node--tertiary">AWS SQS</span>
+            <span class="arch-connector">&rarr;</span>
+            <span class="arch-node arch-node--tertiary">Step Functions</span>
+            <span class="arch-connector">&rarr;</span>
+            <span class="arch-node arch-node--secondary">Qdrant + S3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="arch-card">
+      <h3 class="arch-card__title">Unified AI Evaluation Platform — Evaluation Flow</h3>
+      <p class="arch-card__desc">Centralized LLM evaluation workflow with YAML-configured product adapters, judge-based metrics, deterministic metrics, CI/CD integration, and evaluation dashboards.</p>
+
+      <div class="arch-diagram">
+        <div>
+          <p class="arch-label">Trigger</p>
+          <div class="arch-row">
+            <span class="arch-node">CI/CD Pipeline</span>
+            <span class="arch-connector">&rarr;</span>
+            <span class="arch-node arch-node--primary">YAML Config</span>
+            <span class="arch-connector">&rarr;</span>
+            <span class="arch-node arch-node--primary">Product Adapter</span>
+          </div>
+        </div>
+
+        <div>
+          <p class="arch-label">Evaluation Engine</p>
+          <div class="arch-row">
+            <span class="arch-node arch-node--primary">Evaluation Runner</span>
+            <span class="arch-connector">&rarr;</span>
+            <div class="arch-group">
+              <p class="arch-label" style="margin: 0;">Metrics</p>
+              <div class="arch-row">
+                <span class="arch-node arch-node--tertiary">Azure OpenAI Judge</span>
+                <span class="arch-connector">|</span>
+                <span class="arch-node arch-node--tertiary">Deterministic Metrics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="arch-label">Storage & Output</p>
+          <div class="arch-row">
+            <span class="arch-node arch-node--secondary">PostgreSQL</span>
+            <span class="arch-node arch-node--secondary">S3 Artifacts</span>
+            <span class="arch-connector">&rarr;</span>
+            <span class="arch-node">Streamlit Dashboard</span>
+            <span class="arch-connector">&rarr;</span>
+            <span class="arch-node">Reports / Comparison</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- System Design Focus -->
+<div class="section">
+  <h2 class="section__title">System Design Focus</h2>
+  <div class="strengths-strip strengths-strip--inline">
+    <span class="strength-item">Multi-Tenant AI Architecture</span>
+    <span class="strength-item">Retrieval-Augmented Generation</span>
+    <span class="strength-item">Vector Search & Filtering</span>
+    <span class="strength-item">Async Ingestion Pipelines</span>
+    <span class="strength-item">LLM Cost Optimization</span>
+    <span class="strength-item">Evaluation Infrastructure</span>
+  </div>
 </div>

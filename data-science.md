@@ -1,8 +1,11 @@
 ---
 layout: default
-title: Data Science & Engineering
-description: ML models, data pipelines, and large-scale data processing systems
+title: Applied ML & Data Engineering Foundations
+label: AI FOUNDATIONS & DATA ENGINEERING
+description: Large-scale data pipelines, applied ML workflows, and distributed data processing systems that built the foundation for my current GenAI engineering work.
 ---
+
+<p class="section__subtitle" style="margin-top: 0; margin-bottom: var(--space-8);">This work reflects my background in large-scale ETL, data transformation, and applied analytics, which now informs how I design robust AI systems and retrieval pipelines.</p>
 
 <div class="project-grid">
 
@@ -11,7 +14,9 @@ description: ML models, data pipelines, and large-scale data processing systems
       <h3>Government Data Processing — India Data Portal</h3>
       <p class="project-card__subtitle">ISB Hyderabad | Large-Scale ETL</p>
     </div>
-    <p class="project-card__desc">Processed and cleaned over 500GB of data sourced from government websites including MNREGA Physical, Financial, and Mandays datasets. Built end-to-end pipelines using PySpark for distributed processing and Pandas for data manipulation, with data transformation from long to wide format for integration with the India Data Portal. Stored in Parquet format on Wasabi cloud storage.</p>
+    <p class="project-card__desc">Processed and transformed 500GB+ of public-sector data from multiple government portals, including MNREGA physical, financial, and mandays datasets.</p>
+    <p class="project-card__desc">Built end-to-end ETL workflows using PySpark for distributed processing and Pandas for downstream transformation, including long-to-wide restructuring for portal integration.</p>
+    <p class="project-card__desc">Stored processed outputs in Parquet format on cloud object storage to support reliable large-scale data access and downstream analytics.</p>
     <div class="project-card__metrics">
       <div class="metric">
         <span class="metric__value">500GB+</span>
@@ -41,7 +46,7 @@ description: ML models, data pipelines, and large-scale data processing systems
       <h3>Import Export Data — National Trade ETL Pipeline</h3>
       <p class="project-card__subtitle">ISB Hyderabad | 16-Year Dataset</p>
     </div>
-    <p class="project-card__desc">ETL pipeline extracting import-export data from the Trade Statistics portal of the Ministry of Commerce, Government of India. Created a 100GB+ dataset spanning 16 years of monthly trade data at the country level. Implemented ThreadPoolExecutor for parallel data processing, significantly reducing execution time.</p>
+    <p class="project-card__desc">Built an ETL pipeline extracting import-export data from the Trade Statistics portal of the Ministry of Commerce, Government of India. Produced a 100GB+ dataset spanning 16 years of monthly trade data at the country level. Implemented ThreadPoolExecutor for parallel data processing, significantly reducing execution time.</p>
     <div class="project-card__metrics">
       <div class="metric">
         <span class="metric__value">100GB+</span>
@@ -66,7 +71,7 @@ description: ML models, data pipelines, and large-scale data processing systems
       <h3>Real-Time Stock Market Data with Kafka</h3>
       <p class="project-card__subtitle">Streaming Data Engineering</p>
     </div>
-    <p class="project-card__desc">Real-time stock market data system using Apache Kafka for streaming ingestion. Leveraged AWS Glue for schema management and Athena for SQL-based analytics on streaming data. Implemented performance optimization and robust error handling for reliable real-time processing.</p>
+    <p class="project-card__desc">Built a real-time stock market data system using Apache Kafka for streaming ingestion. Leveraged AWS Glue for schema management and Athena for SQL-based analytics on streaming data. Implemented performance optimization and error handling for reliable real-time processing.</p>
     <div class="project-card__tech">
       <span class="tech-badge">Apache Kafka</span>
       <span class="tech-badge">AWS Glue</span>
@@ -81,7 +86,7 @@ description: ML models, data pipelines, and large-scale data processing systems
       <h3>Drone Detection Model</h3>
       <p class="project-card__subtitle">Defense Sector | YOLOv3 Computer Vision</p>
     </div>
-    <p class="project-card__desc">Dynamic drone detection model for defense applications using YOLOv3 (CNN) with PTZ camera and sensor integration. Collected drone image datasets through web scraping, designed and trained the detection system, and integrated with jammer systems. Minimized PTZ system cost by one-third compared to alternatives.</p>
+    <p class="project-card__desc">Designed and trained a real-time drone detection model for defense applications using YOLOv3 with PTZ camera and sensor integration. Built the image dataset via automated web scraping, integrated the detection system with jammer hardware, and reduced PTZ system cost by one-third versus alternatives.</p>
     <div class="project-card__metrics">
       <div class="metric">
         <span class="metric__value">35%</span>
@@ -102,7 +107,7 @@ description: ML models, data pipelines, and large-scale data processing systems
       <h3>Melanoma Detection</h3>
       <p class="project-card__subtitle">Medical AI | CNN Classification</p>
     </div>
-    <p class="project-card__desc">CNN-based model for accurate melanoma detection from skin images using TensorFlow. Implemented multiclass classification with custom model architecture, handled imbalanced data through up/down sampling, and evaluated using ROC-AUC score and confusion matrices. Melanoma accounts for 75% of skin cancer deaths — early detection is critical.</p>
+    <p class="project-card__desc">Built a CNN-based melanoma detection model from skin images using TensorFlow. Implemented multiclass classification with custom architecture, handled class imbalance through targeted sampling, and evaluated using ROC-AUC and confusion matrices.</p>
     <div class="project-card__tech">
       <span class="tech-badge">TensorFlow</span>
       <span class="tech-badge">CNN</span>
@@ -119,7 +124,7 @@ description: ML models, data pipelines, and large-scale data processing systems
       <h3>Automatic Ticket Classification</h3>
       <p class="project-card__subtitle">NLP | Multi-Algorithm Comparison</p>
     </div>
-    <p class="project-card__desc">NLP model to automatically classify customer complaints based on mentioned products and services. Explored multiple approaches — RNN, LSTM, GRU, Random Forest, and SVM — with word2vec and GloVe embeddings. Includes multilingual translation, stop word removal, and lemmatization in the preprocessing pipeline.</p>
+    <p class="project-card__desc">Built an NLP classification system for automatic customer complaint routing. Implemented and compared RNN, LSTM, GRU, Random Forest, and SVM with word2vec and GloVe embeddings. Delivered 91.2% accuracy with a preprocessing pipeline including multilingual translation and lemmatization.</p>
     <div class="project-card__metrics">
       <div class="metric">
         <span class="metric__value">91.2%</span>
@@ -140,7 +145,7 @@ description: ML models, data pipelines, and large-scale data processing systems
       <h3>Image Captioning with Transformers</h3>
       <p class="project-card__subtitle">Vision + Language | Streamlit App</p>
     </div>
-    <p class="project-card__desc">Transformer-based image captioning system using VisionEncoderDecoderModel to generate contextually rich captions. Leverages ViTImageProcessor and AutoTokenizer for preprocessing, deployed as an interactive Streamlit application on HuggingFace Spaces.</p>
+    <p class="project-card__desc">Built a transformer-based image captioning system using VisionEncoderDecoderModel. Deployed as an interactive Streamlit application on HuggingFace Spaces with ViTImageProcessor and AutoTokenizer for preprocessing.</p>
     <div class="project-card__tech">
       <span class="tech-badge">Transformers</span>
       <span class="tech-badge">ViT</span>

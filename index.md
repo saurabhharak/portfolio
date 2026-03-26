@@ -4,14 +4,19 @@ layout: default
 
 <section class="hero-section">
   <div class="hero-content">
-    <p class="hero-tagline" style="margin-bottom: 0.75rem; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--secondary);">Senior Software Engineer</p>
+    <p class="hero-tagline" style="margin-bottom: 0.75rem; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--secondary);">Senior GenAI Engineer</p>
     <h1 class="hero-name">Saurabh Harak</h1>
-    <p class="hero-title">AI Platforms Engineering</p>
-    <p class="hero-tagline">Building Enterprise RAG, LLM Evaluation & Agentic AI Systems at Scale</p>
+    <p class="hero-title">Enterprise GenAI & AI Platform Engineering</p>
+    <p class="hero-tagline">Building production-grade RAG platforms, AI evaluation systems, and agentic workflows for enterprise use cases.</p>
     <div class="hero-social">
       <a href="https://linkedin.com/in/saurabh-harak" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
       <a href="https://github.com/saurabhharak" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
       <a href="mailto:jobsforsaurabhharak@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+    </div>
+    <div class="hero-actions">
+      <!-- TODO: Replace href with actual resume PDF path, e.g. {{ '/assets/resume/Saurabh_Harak_Resume.pdf' | relative_url }} -->
+      <a href="#" class="hero-resume-btn"><i class="fas fa-file-alt" aria-hidden="true"></i> Download Resume</a>
+      <span class="hero-open-badge">Open to Senior GenAI / AI Platform roles</span>
     </div>
   </div>
 </section>
@@ -20,7 +25,7 @@ layout: default
 <div class="metric-grid">
   <div class="metric">
     <span class="metric__value">5+</span>
-    <span class="metric__label">Years Experience</span>
+    <span class="metric__label">Years in AI Systems</span>
   </div>
   <div class="metric">
     <span class="metric__value">80%+</span>
@@ -32,15 +37,22 @@ layout: default
   </div>
   <div class="metric">
     <span class="metric__value">$0.015</span>
-    <span class="metric__label">Cost / Evaluation</span>
+    <span class="metric__label">Per Evaluation</span>
   </div>
+</div>
+
+<!-- Featured Strengths -->
+<div class="strengths-strip">
+  <span class="strength-item"><i class="fas fa-layer-group" aria-hidden="true"></i> Multi-Tenant RAG Systems</span>
+  <span class="strength-item"><i class="fas fa-scale-balanced" aria-hidden="true"></i> LLM-as-Judge Evaluation</span>
+  <span class="strength-item"><i class="fas fa-diagram-project" aria-hidden="true"></i> Agentic AI Workflows</span>
 </div>
 
 <!-- About -->
 <div class="section">
   <h2 class="section__title">About</h2>
   <p class="section__subtitle">Senior GenAI Engineer building production AI systems</p>
-  <p>Currently a core engineer at <strong>TechnoMile</strong>, where I build <strong>Mila Chat</strong> — a multi-tenant enterprise RAG platform serving federal clients — and sole-architected the <strong>Unified AI Evaluation Platform</strong> that consolidated 3 codebases into one YAML-configurable system, cutting onboarding from 3 weeks to under 4 hours.</p>
+  <p>Currently a core engineer at <strong>TechnoMile</strong>, where I built <strong>Mila Chat</strong> — a multi-tenant enterprise RAG platform serving federal clients — and sole-architected the <strong>Unified AI Evaluation Platform</strong> that consolidated 3 codebases into one YAML-configurable system, cutting onboarding from 3 weeks to under 4 hours.</p>
   <p>Previously fine-tuned Llama2/3 with LoRA/PEFT at Computech Corporation, built spatio-temporal data pipelines at ISB Hyderabad, and led drone autonomy R&D at Jatayu. MSc in Machine Learning & AI from Liverpool John Moores University.</p>
 </div>
 
@@ -56,7 +68,7 @@ layout: default
         <h3>Mila Chat</h3>
         <p class="project-card__subtitle">Multi-Tenant Enterprise RAG Platform</p>
       </div>
-      <p class="project-card__desc">Core engineer on a production multi-tenant GenAI platform supporting federal enterprise clients across document intelligence and conversational AI. Designed retrieval and ingestion architecture with strict multi-tenant isolation at every layer — database, vector search, and conversation context.</p>
+      <p class="project-card__desc">Core AI engineer on a production multi-tenant GenAI platform supporting federal enterprise clients across document intelligence and conversational AI. Designed retrieval and ingestion architecture with strict multi-tenant isolation at every layer — database, vector search, and conversation context.</p>
       <div class="project-card__metrics">
         <div class="metric">
           <span class="metric__value">3s</span>
@@ -83,7 +95,7 @@ layout: default
         <h3>Unified AI Evaluation Platform</h3>
         <p class="project-card__subtitle">LLM-as-Judge Evaluation System</p>
       </div>
-      <p class="project-card__desc">Consolidated 3 independent evaluation codebases (~3,000+ lines of duplicated code) into a single YAML-configurable system evaluating 3 enterprise AI products. Pluggable LLM-as-Judge engine with GPT-4.1, 5 LLM metrics + 3 deterministic metrics, fully integrated into Azure Pipelines CI/CD.</p>
+      <p class="project-card__desc">Designed and built a centralized evaluation platform that consolidated 3 separate systems into one YAML-configurable framework. LLM-as-Judge engine with GPT-4.1 across 5 LLM metrics + 3 deterministic metrics, fully integrated into CI/CD with regression gating.</p>
       <div class="project-card__metrics">
         <div class="metric">
           <span class="metric__value">4hrs</span>
@@ -112,9 +124,9 @@ layout: default
       <div class="project-card__header">
         <span class="featured-badge">Open Source</span>
         <h3>Creator GraphRAG</h3>
-        <p class="project-card__subtitle">Multilingual Book-to-Video Knowledge System</p>
+        <p class="project-card__subtitle">Multilingual Knowledge + Vector Retrieval System</p>
       </div>
-      <p class="project-card__desc">Production-grade system that ingests multilingual books (Marathi, Hindi, English) via Sarvam AI OCR, builds a Knowledge Graph + Vector Store, and generates citation-enforced video content packages. Hybrid retrieval combining Neo4j graph traversal with Qdrant vector similarity search.</p>
+      <p class="project-card__desc">Built a multilingual knowledge system that ingests books across Marathi, Hindi, and English, extracts structured concepts into Neo4j, and combines graph traversal with Qdrant vector similarity search for citation-aware content generation.</p>
       <div class="project-card__metrics">
         <div class="metric">
           <span class="metric__value">71/71</span>
@@ -208,14 +220,14 @@ layout: default
 <!-- Career Timeline -->
 <div class="section">
   <h2 class="section__title">Experience</h2>
-  <p class="section__subtitle">From drones to enterprise AI platforms</p>
+  <p class="section__subtitle">From applied ML to enterprise AI platform engineering</p>
 
   <div class="timeline">
     <div class="timeline-item">
       <span class="timeline-item__date">Mar 2025 – Present</span>
       <h3 class="timeline-item__title">Senior Software Engineer – AI Platforms</h3>
       <span class="timeline-item__company">TechnoMile</span>
-      <p class="timeline-item__desc">Core engineer on Mila Chat (multi-tenant RAG for federal clients). Sole architect of the Unified AI Evaluation Platform — consolidated 3 codebases, cut onboarding from 3 weeks to 4 hours, 80%+ test coverage.</p>
+      <p class="timeline-item__desc">Built and maintained Mila Chat, a multi-tenant RAG platform for federal clients. Sole-architected the Unified AI Evaluation Platform — consolidated 3 codebases, cut onboarding from 3 weeks to 4 hours, 80%+ test coverage.</p>
       <div class="project-card__tech">
         <span class="tech-badge">Azure OpenAI</span>
         <span class="tech-badge">Qdrant</span>
@@ -227,7 +239,7 @@ layout: default
       <span class="timeline-item__date">Sept 2023 – Mar 2025</span>
       <h3 class="timeline-item__title">Machine Learning Engineer – Conversational AI</h3>
       <span class="timeline-item__company">Computech Corporation</span>
-      <p class="timeline-item__desc">Fine-tuned Llama2/3 with LoRA/PEFT, built agentic chatbots with LangChain ReAct patterns, and developed intelligent document query systems for enterprise clients.</p>
+      <p class="timeline-item__desc">Fine-tuned Llama2/3 with LoRA/PEFT for domain-specific tasks. Built agentic chatbots with LangChain ReAct patterns and delivered intelligent document query systems for enterprise clients.</p>
       <div class="project-card__tech">
         <span class="tech-badge">LangChain</span>
         <span class="tech-badge">LoRA/PEFT</span>
@@ -239,7 +251,7 @@ layout: default
       <span class="timeline-item__date">Nov 2022 – Sept 2023</span>
       <h3 class="timeline-item__title">Data Scientist</h3>
       <span class="timeline-item__company">Indian School of Business, Hyderabad</span>
-      <p class="timeline-item__desc">Built large-scale spatio-temporal data pipelines for a national-scale data warehousing initiative. Automated ingestion from 10+ government sources, 30% efficiency improvement.</p>
+      <p class="timeline-item__desc">Built large-scale spatio-temporal data pipelines for a national-scale data warehousing initiative. Automated ingestion from 10+ government sources, delivering 30% efficiency improvement.</p>
       <div class="project-card__tech">
         <span class="tech-badge">PySpark</span>
         <span class="tech-badge">Pandas</span>
@@ -251,7 +263,7 @@ layout: default
       <span class="timeline-item__date">Jan 2021 – Nov 2022</span>
       <h3 class="timeline-item__title">Full Stack Developer / Team Leader</h3>
       <span class="timeline-item__company">Jatayu Unmanned Technology Pvt. Ltd.</span>
-      <p class="timeline-item__desc">Led R&D for drone autonomy systems. Drove automation across drone operations achieving 40% effort reduction. Built web applications for drone data monitoring.</p>
+      <p class="timeline-item__desc">Led R&D for drone autonomy systems. Delivered automation across drone operations achieving 40% effort reduction. Built web applications for drone data monitoring.</p>
       <div class="project-card__tech">
         <span class="tech-badge">Python</span>
         <span class="tech-badge">Django</span>
@@ -282,10 +294,73 @@ layout: default
   </div>
 </div>
 
+<!-- Testimonial / Recommendation (hidden by default — enable in style.scss by removing display:none on .testimonial-section) -->
+<div class="section testimonial-section">
+  <h2 class="section__title">Recommendation</h2>
+  <div class="testimonial-card">
+    <!-- TODO: Replace placeholder with a real colleague or manager recommendation -->
+    <p class="testimonial-card__quote">[Add a real colleague/manager recommendation here]</p>
+    <p class="testimonial-card__author"><strong>Name</strong> — Title, Company</p>
+  </div>
+</div>
+
+<!-- Technical Writing Preview -->
+<div class="section">
+  <h2 class="section__title">Technical Writing</h2>
+  <p class="section__subtitle">Selected writing on LLM systems, RAG, agents, fine-tuning, and production AI engineering.</p>
+
+  <div class="writing-grid writing-grid--compact">
+    <a href="https://medium.com/@saurabhharak/llm-agents-their-past-present-and-future-22988c29a5f8" target="_blank" rel="noopener" class="writing-card">
+      <div class="writing-card__header">
+        <h3>LLM Agents: Past, Present, and Future</h3>
+        <span class="writing-card__icon"><i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+      </div>
+      <p class="writing-card__desc">The evolution and trajectory of LLM agents.</p>
+      <div class="writing-card__tags">
+        <span class="tech-badge">Agents</span>
+      </div>
+    </a>
+    <a href="https://medium.com/@saurabhharak/large-language-models-with-graceful-fallbacks-e123d3408549" target="_blank" rel="noopener" class="writing-card">
+      <div class="writing-card__header">
+        <h3>LLMs with Graceful Fallbacks</h3>
+        <span class="writing-card__icon"><i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+      </div>
+      <p class="writing-card__desc">Reliability and fallback strategies for production LLM systems.</p>
+      <div class="writing-card__tags">
+        <span class="tech-badge">Reliability</span>
+      </div>
+    </a>
+    <a href="https://medium.com/@saurabhharak/fine-tuning-large-language-models-683b168228b1" target="_blank" rel="noopener" class="writing-card">
+      <div class="writing-card__header">
+        <h3>Fine-Tuning Large Language Models</h3>
+        <span class="writing-card__icon"><i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+      </div>
+      <p class="writing-card__desc">Adapting pre-trained LLMs to specific tasks and domains.</p>
+      <div class="writing-card__tags">
+        <span class="tech-badge">Fine-Tuning</span>
+      </div>
+    </a>
+    <a href="https://medium.com/@saurabhharak/data-retrieval-with-langchain-indexing-964749965aed" target="_blank" rel="noopener" class="writing-card">
+      <div class="writing-card__header">
+        <h3>Data Retrieval with LangChain Indexing</h3>
+        <span class="writing-card__icon"><i class="fas fa-external-link-alt" aria-hidden="true"></i></span>
+      </div>
+      <p class="writing-card__desc">Indexing and retrieval patterns for RAG systems.</p>
+      <div class="writing-card__tags">
+        <span class="tech-badge">RAG</span>
+      </div>
+    </a>
+  </div>
+
+  <div style="margin-top: var(--space-6);">
+    <a href="{{ '/writing' | relative_url }}" class="writing-view-all"><i class="fas fa-arrow-right" aria-hidden="true"></i> View all 16 articles</a>
+  </div>
+</div>
+
 <!-- Contact CTA -->
 <div class="contact-cta">
   <h2>Let's Build Something Together</h2>
-  <p>Open to collaboration, consulting, and new opportunities in AI/ML engineering.</p>
+  <p>Open to collaboration, consulting, and senior engineering opportunities in GenAI and AI platform engineering.</p>
   <div class="contact-buttons">
     <a href="mailto:jobsforsaurabhharak@gmail.com" class="contact-btn--primary"><i class="fas fa-envelope" aria-hidden="true"></i> Get in Touch</a>
     <a href="https://linkedin.com/in/saurabh-harak" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
